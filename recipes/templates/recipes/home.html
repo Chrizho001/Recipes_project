@@ -1,0 +1,29 @@
+{% extends 'recipes/base.html' %}
+{% load static %}
+{% block content %}
+
+<div style="margin-top: 100px;">
+    
+<link rel="stylesheet" href="{% static 'home.css' %}">
+<div class="category-div">
+    <a class="category" href="#">Breakfast</a>
+    <a class="category" href="#">Deserts</a>
+    <a class="category" class="category" href="#">African</a>
+    <a class="category" href="#">Occasions</a>
+    <a class="category" href="#">About Us</a>
+</div>
+<h3 class="craving-text">WHAT I'M CRAVING FOR THIS WEEKEND</h3>
+<p class="caption">Food that nourishes the body, fills the stomach and delights the eye</p>
+<div class="craving-container-div">
+    <div class="craving-div1" >
+       <img class="craving1" src="{% static 'craving1.jpg' %}" alt="">
+    </div>
+    <div class="craving-div2">
+        <img class="craving" src="{% static 'craving2.jpg' %}" alt="">   
+        <img class="craving" src="{% static 'craving3.jpg' %}" alt="">   
+        <img class="craving" src="{% static 'craving6.jpg' %}" alt="">   
+        <img class="craving" src="{% static 'craving5.jpg' %}" alt="">   
+    </div>
+</div>
+</div>
+{% endblock %}

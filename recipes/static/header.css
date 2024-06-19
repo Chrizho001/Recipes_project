@@ -1,0 +1,137 @@
+body{
+    margin: 0;
+    
+}
+.block{
+    margin-top: 100px;
+    /* width: 100%;
+    height: 100%; */
+}
+
+
+.top-nav-div{
+   display: flex;
+   flex-direction: row;
+   background-color: rgb(121, 133, 146); 
+   position: fixed; /* Set the navbar to fixed position */
+   top: 0; /* Position the navbar at the top of the page */
+   width: 100%; /* Full width */
+   margin-bottom: 0px;
+}
+
+.logo-div{
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.logo{
+    height: 80px;
+    margin: 0px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.spa{
+    height: 60px;
+    margin: 0px;
+}
+.search-accounts-div{
+    flex: 1;
+    display: flex;
+    /* justify-content: left; */
+    padding-right: 40px;
+    align-items: center;
+}
+
+
+
+.search-bar::placeholder{
+    font-family: Roboto, Arial;
+    font-size: 18px;
+    border: none;
+}
+.search-bar{
+    width: 250px;
+    height: 30px;
+    border-radius: 20px;
+    border-color: rgb(241, 239, 239);
+    border: solid rgb(233, 230, 230);
+    padding-left: 5px;
+    margin-right: 20px;
+    font-size: 16px;
+    text-decoration: none;
+    box-shadow: inset 1px 2px 5px rgba(0, 0, 0, 0.05);
+    
+
+}
+
+.facebook-logo{
+    height: 35px;
+    border-radius: 22px;
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+    transition: opacity 0.15s;
+
+}
+
+.facebook-logo:hover{
+    background-color: rgb(215, 216, 218);
+}
+
+.facebook-logo:active{
+    opacity: 0.6;
+}
+
+
+.youtube-logo{
+    height: 35px;
+    border-radius: 22px;
+    padding: 2px 2px 2px 2px;
+    cursor: pointer;
+    transition: background-color 0.15s,
+}
+
+.youtube-logo:hover{
+    background-color: rgb(215, 216, 218);
+}
+
+.youtube-logo:active{
+    opacity: 0.6;
+}
+
+
+.x-logo{
+    height: 30px;
+    border-radius: 2px;
+    cursor: pointer;
+    padding: 2px 2px 2px 2px;
+}
+
+
+.x:hover{
+    background-color: rgb(215, 216, 218);
+}
+
+.x-logo:active{
+    opacity: 0.6;
+}
+
+
+.instagram-logo{
+    height: 37px;
+    border-radius: 22px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+
+.instagram-logo:hover{
+    background-color: rgb(215, 216, 218);
+}
+
+.instagram-logo:active{
+    opacity: 0.6;
+}

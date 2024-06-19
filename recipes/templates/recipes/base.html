@@ -1,0 +1,32 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="{% static 'header.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="top-nav-div">
+            <div class="logo-div">
+                <img class="logo" src="{% static 'logo.png' %}" alt="">
+                <img class="spa" src="{% static 'Picture5.png' %}" alt="">
+            </div>
+            <div class="search-accounts-div">
+                <input class="search-bar" type="text" placeholder="Search">
+                <img class="facebook-logo" src="{% static 'facebook-logo.png' %}" alt="">
+                <img class="instagram-logo" src="{% static 'instagram-logo.png' %}" alt="">
+                <img class="x-logo" src="{% static 'x-logo.png' %}" alt="">
+                <img class="youtube-logo" src="{% static 'youtube-logo.png' %}" alt="">
+            </div>
+
+        </div>
+        <div class="block">
+            {% block content %}
+        
+            {% endblock %}
+        </div>
+        
+    </body>
+</html>

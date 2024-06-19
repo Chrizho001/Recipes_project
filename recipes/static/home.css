@@ -1,0 +1,80 @@
+.craving-container-div{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-left: 20px;
+    padding-right: 30px;
+    column-gap: 15px;
+}
+
+.category-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(3, 54, 88);
+    height: 60px;
+    margin-top: 100px;
+}
+
+.category{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 90px;
+}
+
+.category:hover{
+    color: rgb(241, 177, 56);
+}
+
+.craving-div1{
+    height: 500px;
+}
+
+.craving-div2{
+    height: 500px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 15px;
+}
+
+.craving-text{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 150px;
+    font-style: normal;
+    font-size: 40px;
+    color: rgb(24, 51, 84);
+    margin-top: 70px;
+    margin-left: 25px;
+    margin-bottom: 0px;
+}
+
+.caption{
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 150px;
+    font-style: normal;
+    font-size: 15px;
+    color: rgb(24, 51, 84);
+    margin-bottom: 20px;
+    margin-left: 25px;
+    margin-top: 0px;
+ 
+}
+
+.craving1{
+    width: 100%;
+    height: 500px;
+    border-radius: 3px;
+}
+
+.craving{
+    width: 350px;
+    height: 240px;
+    border-radius: 3px;
+}
+
