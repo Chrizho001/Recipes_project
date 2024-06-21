@@ -56,11 +56,11 @@
 .caption{
     font-family: "Raleway", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 150px;
+    font-weight: 350px;
     font-style: normal;
-    font-size: 15px;
+    font-size: 18px;
     color: rgb(24, 51, 84);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     margin-left: 25px;
     margin-top: 0px;
  
@@ -103,6 +103,7 @@
 
 .new-recipe1-header{
     margin-bottom: 20px;
+    margin-top: 90px;
     font-family: 'Raleway', sans-serif;
     font-optical-sizing: auto;
     font-weight: 250px;
@@ -118,7 +119,10 @@
     font-weight: 150px;
     font-style: normal;
     font-size: 20px;
-    margin-bottom: 20px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 20px;
+    margin-bottom: 150px;
 }
 
 .new-recipe-link{
@@ -135,13 +139,13 @@
     padding-right: 20px;
     padding-bottom: 10px;
     padding-top: 10px;
-    margin-top: 5px;
+    margin-top: 15px;
     text-decoration: none;
 }
 
 .new-recipe-link:hover{
-    background-color: rgb(209, 207, 207);
-    color: rgb(12, 26, 73);
+    background-color: rgb(221, 112, 10);
+    color: white;
 }
 
 .N-recipes-div{
@@ -149,16 +153,25 @@
     /* grid-template-columns: 1fr 1fr 1fr 1fr; */
     grid-template-columns: 310px 310px 310px 310px;
     column-gap: 16px;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 30px;
     margin-right: 30px;
-    margin-bottom: 1000px;
+    margin-bottom: 10px;
 }
 
 .N-recipes{
-    height: 380px;
+    height: 400px;
     width: 100%;
     border-radius: 3px;
-    
+}
+
+.N-recipes-text{
+    margin-top: 5px;
+    font-family: 'Raleway', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 20px;
+    color: rgb(24, 51, 84);
 }
 
