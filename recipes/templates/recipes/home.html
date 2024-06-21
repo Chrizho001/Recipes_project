@@ -3,8 +3,8 @@
 {% block content %}
 
 <div style="margin-top: 100px;">
-    
-<link rel="stylesheet" href="{% static 'home.css' %}">
+{% load static %}  
+{% load static %}<link rel="stylesheet" href="{% static 'home.css' %}">
 <div class="category-div">
     <a class="category" href="#">Breakfast</a>
     <a class="category" href="#">Deserts</a>
@@ -24,6 +24,27 @@
         <img class="craving" src="{% static 'craving6.jpg' %}" alt="">   
         <img class="craving" src="{% static 'craving5.jpg' %}" alt="">   
     </div>
+</div>
+<hr style="margin-top: 80px;">
+<div class="new-recipes-container">
+    <h3 class="craving-text">LATEST RECIPES</h3>
+    <div class="new-recipes-div">
+        <div style="height: 510px;">
+            <img class="new-recipes1" src="{% static 'new-recipes\hamburger.jpeg' %}" alt="">
+        </div>
+        <div class="new-recipes1-description-div">
+            <p class="new-recipe1-header">DID YOU KNOW!</p>
+            <p class="new-recipe1-text"><strong>Hamburger Day</strong>: In the United States, May 28th is celebrated as National Hamburger Day, a day dedicated to enjoying and celebrating this iconic food.</p>
+            <a href="#" class="new-recipe-link">GET THE RECIPE</a>
+        </div>
+    </div>
+
+</div>
+<div class="N-recipes-div">
+    <img class="N-recipes" src="{% static 'new-recipes\pounded-yam-vegetable-soup.jpg' %}" alt="">
+    <img class="N-recipes" src="{% static 'new-recipes\spaghetti-squash-soup.jpg' %}" alt="">
+    <img class="N-recipes" src="{% static 'new-recipes\sandwich-smoked-meat_x700.webp' %}" alt="">
+    <img class="N-recipes" src="{% static 'new-recipes\images (6).jpg' %}" alt="">
 </div>
 </div>
 {% endblock %}
