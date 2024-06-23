@@ -2,157 +2,158 @@
 {% load static %}
 {% block content %}
 
-<div style="margin-top: 100px;">
-{% load static %}  
-{% load static %}<link rel="stylesheet" href="{% static 'home.css' %}">
-<div class="category-div">
-    <a class="category" href="#">Breakfast</a>
-    <a class="category" href="#">Deserts</a>
-    <a class="category" class="category" href="#">African</a>
-    <a class="category" href="#">Occasions</a>
-    <a class="category" href="#">About Us</a>
-</div>
-<h3 class="craving-text">WHAT I'M CRAVING FOR THIS WEEKEND</h3>
-<p class="caption">Food that nourishes the body, fills the stomach and delights the eye</p>
-<div class="craving-container-div">
-    <div class="craving-div1" >
-       <img class="craving1" src="{% static 'craving1.jpg' %}" alt="">
+<div class="main-container-div">
+    <link rel="stylesheet" href="{% static 'home.css' %}">
+    <div class="category-div">
+        <a class="category" href="#">Breakfast</a>
+        <a class="category" href="#">Deserts</a>
+        <a class="category" class="category" href="#">African</a>
+        <a class="category" href="#">Occasions</a>
+        <a class="category" href="#">About Us</a>
     </div>
-    <div class="craving-div2">
-        <img class="craving" src="{% static 'craving2.jpg' %}" alt="">   
-        <img class="craving" src="{% static 'craving3.jpg' %}" alt="">   
-        <img class="craving" src="{% static 'craving6.jpg' %}" alt="">   
-        <img class="craving" src="{% static 'craving5.jpg' %}" alt="">   
-    </div>
-</div>
-<hr style="margin-top: 80px;">
-<div class="new-recipes-container">
-    <h3 class="craving-text">LATEST RECIPES</h3>
-    <div class="new-recipes-div">
-        <div style="height: 510px;">
-            <img class="new-recipes1" src="{% static 'new-recipes\hamburger.jpeg' %}" alt="">
-        </div>
-        <div class="new-recipes1-description-div">
-            <p class="new-recipe1-header">DID YOU KNOW!</p>
-            <p class="new-recipe1-text"><strong>Hamburger Day</strong>: In the United States, May 28th is celebrated as National Hamburger Day, a day dedicated to enjoying and celebrating this iconic food.</p>
-            <a href="#" class="new-recipe-link">GET THE RECIPE</a>
-        </div>
-    </div>
-
-    <div class="N-recipes-div">
-        <div>
-            <img class="N-recipes" src="{% static 'new-recipes\pounded-yam-vegetable-soup.jpg' %}" alt="">
-            <p class="N-recipes-text">Pounded Yam with Vegetable soup</p>
-        </div>
-        <div>
-            <a href="{% url 'smoked_meat_sandwhich' %}" style="text-decoration: none;">
-                <img class="N-recipes" src="{% static 'new-recipes\sandwich-smoked-meat_x700.webp' %}" alt="">
-                <p class="N-recipes-text">Smoked Meat Sandwhich</p>
+    <h3 class="craving-text">WHAT I'M CRAVING FOR THIS WEEKEND</h3>
+    <p class="caption">Food that nourishes the body, fills the stomach and delights the eye</p>
+    <div class="craving-container-div">
+        <div class="craving-div1" >
+            <a href="{% url 'Barbecue_Fish' %}">
+                <img class="craving1" src="{% static 'craving1.jpg' %}" alt="">
             </a>
+        </div>
+        <div class="craving-div2">
+            <img class="craving" src="{% static 'craving2.jpg' %}" alt="">   
+            <img class="craving" src="{% static 'craving3.jpg' %}" alt="">   
+            <img class="craving" src="{% static 'craving6.jpg' %}" alt="">   
+            <img class="craving" src="{% static 'craving5.jpg' %}" alt="">   
+        </div>
+    </div>
+    <hr style="margin-top: 80px;">
+    <div class="new-recipes-container">
+        <h3 class="craving-text">LATEST RECIPES</h3>
+        <div class="new-recipes-div">
+            <div style="height: 510px;">
+                <img class="new-recipes1" src="{% static 'new-recipes\hamburger.jpeg' %}" alt="">
+            </div>
+            <div class="new-recipes1-description-div">
+                <p class="new-recipe1-header">DID YOU KNOW!</p>
+                <p class="new-recipe1-text"><strong>Hamburger Day</strong>: In the United States, May 28th is celebrated as National Hamburger Day, a day dedicated to enjoying and celebrating this iconic food.</p>
+                <a href="#" class="new-recipe-link">GET THE RECIPE</a>
+            </div>
+        </div>
+
+        <div class="N-recipes-div">
+            <div>
+                <img class="N-recipes" src="{% static 'new-recipes\pounded-yam-vegetable-soup.jpg' %}" alt="">
+                <p class="N-recipes-text">Pounded Yam with Vegetable soup</p>
+            </div>
+            <div>
+                
+                    <img class="N-recipes" src="{% static 'new-recipes\sandwich-smoked-meat_x700.webp' %}" alt="">
+                    <p class="N-recipes-text">Smoked Meat Sandwhich</p>
+                
+                
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'new-recipes\Instant-Pot-Cabbage-Roll-Soup-Recipe.webp' %}" alt="">
+                <p class="N-recipes-text">Cabbage Soup</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'new-recipes\images (6).jpg' %}" alt="">
+                <p class="N-recipes-text">Slurpy Maccaroni</p>
+            </div>
             
         </div>
-        <div>
-            <img class="N-recipes" src="{% static 'new-recipes\Instant-Pot-Cabbage-Roll-Soup-Recipe.webp' %}" alt="">
-            <p class="N-recipes-text">Cabbage Soup</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'new-recipes\images (6).jpg' %}" alt="">
-            <p class="N-recipes-text">Slurpy Maccaroni</p>
-        </div>
-        
     </div>
-</div>
 
-<div>
-    <hr style="margin-top: 50px;">
-    <h3 class="craving-text">HAPPY MEALS</h3>
-    <p class="caption">Everyone deserves to be Happy</p>
-    <div class="N-recipes-div">
-        <div>
-            <img class="N-recipes" src="{% static 'Happy-meal\Golden-glazed-carrot-mushroom-hazelnut-tart-6a26663.jpg' %}" alt="">
-            <p class="N-recipes-text">Golden glazed carrot with mushroom tart</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'Happy-meal\korean-bapsang.jpg' %}" alt="">
-            <p class="N-recipes-text">Korean Bapsang</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'Happy-meal\seafood-pasta-with-shrimps-and-scallops.jpeg' %}" alt="">
-            <p class="N-recipes-text">Pasta with Shrimps and Scallops</p>
+    <div>
+        <hr style="margin-top: 50px;">
+        <h3 class="craving-text">HAPPY MEALS</h3>
+        <p class="caption">Everyone deserves to be Happy</p>
+        <div class="N-recipes-div">
+            <div>
+                <img class="N-recipes" src="{% static 'Happy-meal\Golden-glazed-carrot-mushroom-hazelnut-tart-6a26663.jpg' %}" alt="">
+                <p class="N-recipes-text">Golden glazed carrot with mushroom tart</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'Happy-meal\korean-bapsang.jpg' %}" alt="">
+                <p class="N-recipes-text">Korean Bapsang</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'Happy-meal\seafood-pasta-with-shrimps-and-scallops.jpeg' %}" alt="">
+                <p class="N-recipes-text">Pasta with Shrimps and Scallops</p>
 
+                
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'Happy-meal\pan-seared-salmon-with-kale-and-apple-salad.jpeg' %}" alt="">
+                <p class="N-recipes-text">Pan seared Salmon with Kale and apple salad</p>
+            </div>
             
         </div>
-        <div>
-            <img class="N-recipes" src="{% static 'Happy-meal\pan-seared-salmon-with-kale-and-apple-salad.jpeg' %}" alt="">
-            <p class="N-recipes-text">Pan seared Salmon with Kale and apple salad</p>
-        </div>
-        
-    </div>
-</div>
-
-
-<!-- VEGGIES CORNER  -->
-
-<div>
-    <hr style="margin-top: 50px;">
-    <h3 class="craving-text">VEGGIES</h3>
-    <p class="caption">Health and Tasty!</p>
-    <div class="new-recipes-div">
-        <div style="height: 510px;">
-            <img class="new-recipes1" src="{% static 'veggies\Asian-Style-Scallion-Cucumber-Avocado-Toast.jpg' %}" alt="">
-        </div>
-        <div class="new-recipes1-description-div">
-            <p class="new-recipe1-header">DID YOU KNOW!</p>
-            <p class="new-recipe1-text">Vegetarians save approximately 25 animals each year just by choosing plant-based meals! <br> 🥗🌱 #VegetarianLife #SaveThePlanet"</p>
-            <a href="#" class="new-recipe-link">GET THE RECIPE</a>
-        </div>
-    </div>
-    <div class="N-recipes-div">
-        <div>
-            <img class="N-recipes" src="{% static 'veggies\Breadless Sandwhich.jpg' %}" alt="">
-            <p class="N-recipes-text">Vegan Sandwhich</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'veggies\open-face-vegan-pie.jpg' %}" alt="">
-            <p class="N-recipes-text">Vegan Potato Pie</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'veggies\vegetarian-pizza-54426-1.jpeg' %}" alt="">
-            <p class="N-recipes-text">Vegetarian Pizza</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'veggies\vegetarian-lasagne-96693-2.jpeg' %}" alt="">
-            <p class="N-recipes-text">Vegetarian Lasagne</p>
-        </div>
-        
     </div>
 
-</div>
-<div style="margin-bottom: 1000px;">
-    <hr style="margin-top: 50px;">
-    <h3 class="craving-text">HOT 'n' SPICY!</h3>
-    <p class="caption">Turn up the heat with these sizzling and spicy dishes that are sure to ignite your taste buds! 🌶️</p>
 
-    <div class="N-recipes-div">
-        <div>
-            <img class="N-recipes" src="{% static 'hot-spicy\Goat-Meat-Pepper-Soup.jpg' %}" alt="">
-            <p class="N-recipes-text">Goat Meat Pepper Soup</p>
+    <!-- VEGGIES CORNER  -->
+
+    <div>
+        <hr style="margin-top: 50px;">
+        <h3 class="craving-text">VEGGIES</h3>
+        <p class="caption">Health and Tasty!</p>
+        <div class="new-recipes-div">
+            <div style="height: 510px;">
+                <img class="new-recipes1" src="{% static 'veggies\Asian-Style-Scallion-Cucumber-Avocado-Toast.jpg' %}" alt="">
+            </div>
+            <div class="new-recipes1-description-div">
+                <p class="new-recipe1-header">DID YOU KNOW!</p>
+                <p class="new-recipe1-text">Vegetarians save approximately 25 animals each year just by choosing plant-based meals! <br> 🥗🌱 #VegetarianLife #SaveThePlanet"</p>
+                <a href="#" class="new-recipe-link">GET THE RECIPE</a>
+            </div>
         </div>
-        <div>
-            <img class="N-recipes" src="{% static 'hot-spicy\extrah-skentucky-superhot-spicychickenwings.jpg' %}" alt="">
-            <p class="N-recipes-text">Hot Spicy Chicken Wings</p>
+        <div class="N-recipes-div">
+            <div>
+                <img class="N-recipes" src="{% static 'veggies\Breadless Sandwhich.jpg' %}" alt="">
+                <p class="N-recipes-text">Vegan Sandwhich</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'veggies\open-face-vegan-pie.jpg' %}" alt="">
+                <p class="N-recipes-text">Vegan Potato Pie</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'veggies\vegetarian-pizza-54426-1.jpeg' %}" alt="">
+                <p class="N-recipes-text">Vegetarian Pizza</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'veggies\vegetarian-lasagne-96693-2.jpeg' %}" alt="">
+                <p class="N-recipes-text">Vegetarian Lasagne</p>
+            </div>
+            
         </div>
-        <div>
-            <img class="N-recipes" src="{% static 'hot-spicy\Indian-spice-chicken.jpg' %}" alt="">
-            <p class="N-recipes-text">Indian Spice Chicken</p>
-        </div>
-        <div>
-            <img class="N-recipes" src="{% static 'hot-spicy\Spicy_Spaghetti_image.webp' %}" alt="">
-            <p class="N-recipes-text">Hot Spicy Spaghetti</p>
-        </div>
-        
+
     </div>
+    <div style="margin-bottom: 1000px;">
+        <hr style="margin-top: 50px;">
+        <h3 class="craving-text">HOT 'n' SPICY!</h3>
+        <p class="caption">Turn up the heat with these sizzling and spicy dishes that are sure to ignite your taste buds! 🌶️</p>
 
-</div>
+        <div class="N-recipes-div">
+            <div>
+                <img class="N-recipes" src="{% static 'hot-spicy\Goat-Meat-Pepper-Soup.jpg' %}" alt="">
+                <p class="N-recipes-text">Goat Meat Pepper Soup</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'hot-spicy\extrah-skentucky-superhot-spicychickenwings.jpg' %}" alt="">
+                <p class="N-recipes-text">Hot Spicy Chicken Wings</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'hot-spicy\Indian-spice-chicken.jpg' %}" alt="">
+                <p class="N-recipes-text">Indian Spice Chicken</p>
+            </div>
+            <div>
+                <img class="N-recipes" src="{% static 'hot-spicy\Spicy_Spaghetti_image.webp' %}" alt="">
+                <p class="N-recipes-text">Hot Spicy Spaghetti</p>
+            </div>
+            
+        </div>
+
+    </div>
 </div>
 {% endblock %}

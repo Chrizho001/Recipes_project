@@ -7,9 +7,19 @@ from .models import Dish
 class HomeView(TemplateView):
     template_name='recipes/home.html'
 
-class Smoked_Meat_Sandwhich_DetailView(TemplateView):
-    template_name= 'new_recipes/smoked_meat_sandwhich.html'
+# Cravings Section
 
-# class Pasta_With_Shrimps_and_Scallops_DetailView(TemplateView):
-#     template_name= 'recipes/base_detail.html'
+class Barbecue_fishDetailView(TemplateView):
+    template_name= 'cravings/Barbecue_fish.html'
 
+class Bacon_eggsDetailView(TemplateView):
+    template_name= 'cravings/Bacon_eggs.html'
+
+class Jollof_riceDetailView(TemplateView):
+    template_name= 'cravings/Jollof_rice.html'
+
+class Goat_meat_pepper_soupDetailView(TemplateView):
+    template_name= 'cravings/Goat_meat_pepper_soup.html'
+
+class Italia_smoked_sandwhichDetailView(TemplateView):
+    template_name= 'cravings/Italia_smoked_sandwhich.html'
