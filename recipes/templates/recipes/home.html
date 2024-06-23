@@ -45,8 +45,11 @@
             <p class="N-recipes-text">Pounded Yam with Vegetable soup</p>
         </div>
         <div>
-            <img class="N-recipes" src="{% static 'new-recipes\sandwich-smoked-meat_x700.webp' %}" alt="">
-            <p class="N-recipes-text">Smoked Meat Sandwhich</p>
+            <a href="{% url 'smoked_meat_sandwhich' %}" style="text-decoration: none;">
+                <img class="N-recipes" src="{% static 'new-recipes\sandwich-smoked-meat_x700.webp' %}" alt="">
+                <p class="N-recipes-text">Smoked Meat Sandwhich</p>
+            </a>
+            
         </div>
         <div>
             <img class="N-recipes" src="{% static 'new-recipes\Instant-Pot-Cabbage-Roll-Soup-Recipe.webp' %}" alt="">
@@ -76,6 +79,8 @@
         <div>
             <img class="N-recipes" src="{% static 'Happy-meal\seafood-pasta-with-shrimps-and-scallops.jpeg' %}" alt="">
             <p class="N-recipes-text">Pasta with Shrimps and Scallops</p>
+
+            
         </div>
         <div>
             <img class="N-recipes" src="{% static 'Happy-meal\pan-seared-salmon-with-kale-and-apple-salad.jpeg' %}" alt="">
